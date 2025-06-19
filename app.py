@@ -55,7 +55,7 @@ if not st.session_state.started:
         st.session_state.answers = []
         st.session_state.selected = None
         st.session_state.started = True
-        st.experimental_rerun()
+        st.rerun()
     st.stop()
 
 # Show results if quiz is done
