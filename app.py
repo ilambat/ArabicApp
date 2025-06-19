@@ -81,7 +81,7 @@ if st.session_state.index >= 20:
 
     if st.button("🔁 Start New Test"):
         st.session_state.started = False
-        st.experimental_rerun()
+        st.rerun()
     st.stop()
 
 # Current question
@@ -122,4 +122,5 @@ if selected and not st.session_state.feedback_shown:
     st.session_state.index += 1
     st.session_state.selected = None
     st.session_state.feedback_shown = False
-    st.experimental_rerun()
+    st.rerun()
+    
