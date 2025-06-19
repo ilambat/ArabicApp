@@ -95,10 +95,14 @@ if st.session_state.test_active and st.session_state.index >= 20:
 
     with st.expander("📊 See detailed results"):
         for ans in st.session_state.answers:
-            flagged_note = "⚠️ (Previously incorrect)" if ans["flagged"] else ""
-            st.markdown(f"- **Q:** {ans['question']}  
-**Your answer:** {ans['your_answer']}  
-**Correct answer:** {ans['correct_answer']}  
-**Result:** {ans['result']} {flagged_note}")
+            st.markdown(
+                f"- **Q:** {ans['question']}  
+"
+                f"**Your answer:** {ans['your_answer']}  
+"
+                f"**Correct answer:** {ans['correct_answer']}  
+"
+                f"**Result:** {ans['result']} {'⚠️ (Previously incorrect)' if ans['flagged'] else ''}"
+            )
 
     st.session_state.test_active = False
