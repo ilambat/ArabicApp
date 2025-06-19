@@ -34,7 +34,7 @@ vocab = [
 if "history" not in st.session_state:
     st.session_state.history = []
 
-if "started" not in st.session_state:
+if "started" not in st.session_state or st.session_state.get("reset", False):
     st.session_state.started = False
     st.session_state.quiz_type = "Arabic → English"
     st.session_state.questions = []
@@ -42,8 +42,7 @@ if "started" not in st.session_state:
     st.session_state.score = 0
     st.session_state.answers = []
     st.session_state.past_wrong_words = set()
-    st.session_state.selected = None
-    st.session_state.feedback_shown = False
+    st.session_state.reset = False
 
 # Quiz setup
 if not st.session_state.started:
@@ -80,7 +79,7 @@ if st.session_state.index >= 20:
                 st.markdown(f"- Test {i}: {entry}")
 
     if st.button("🔁 Start New Test"):
-        st.session_state.started = False
+        st.session_state.reset = True
         st.rerun()
     st.stop()
 
@@ -101,7 +100,7 @@ else:
 
 selected = st.radio("Choose one:", choices, index=None, key=f"question_{st.session_state.index}")
 
-if selected and not st.session_state.feedback_shown:
+if selected:
     correct = (
         selected == question["english"]
         if st.session_state.quiz_type == "Arabic → English"
@@ -120,7 +119,4 @@ if selected and not st.session_state.feedback_shown:
     else:
         st.session_state.past_wrong_words.add(question["english"])
     st.session_state.index += 1
-    st.session_state.selected = None
-    st.session_state.feedback_shown = False
     st.rerun()
-    
