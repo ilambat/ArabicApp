@@ -69,6 +69,8 @@ if st.session_state.index >= 20:
                 f"**Result:** {ans['result']} {'⚠️ (Previously incorrect)' if ans['flagged'] else ''}"
             )
 
-    if st.session_state.history:
-        with st.expander("📈 Test History"):
-            for i, entry in enumerate(st.sess
+if st.session_state.history:
+    with st.expander("📈 Test History"):
+        for i, entry in enumerate(st.session_state.history, 1):
+            st.markdown(f"- Test {i}: {entry}")
+
