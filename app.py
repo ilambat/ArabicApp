@@ -14,7 +14,7 @@ vocab = [
     {"arabic": "طَاوِلَةٌ", "english": "Table"},
     {"arabic": "سَبُّورَةٌ", "english": "Blackboard"},
     {"arabic": "كُرْسِيٌّ", "english": "Chair"},
-    {"arabic": "شَنْطَةٌ", "english": "Bag"},
+    {"arabic": "حَقِيبَةٌ", "english": "Bag"},
     {"arabic": "سَيَّارَةٌ", "english": "Car"},
     {"arabic": "بَابٌ", "english": "Door"},
     {"arabic": "نَافِذَةٌ", "english": "Window"},
