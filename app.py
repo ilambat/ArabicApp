@@ -6,6 +6,7 @@ st.set_page_config(page_title="Arabic Vocabulary Quiz")
 # Updated Vocabulary list
 vocab = [
     {"arabic": "كِتَابٌ", "english": "Book"},
+    {"arabic": "مِقَصٌّ", "english": "Scissors"},
     {"arabic": "قَلَمٌ", "english": "Pen"},
     {"arabic": "مِسْطَرَةٌ", "english": "Ruler"},
     {"arabic": "مِمْحَاةٌ", "english": "Eraser"},
