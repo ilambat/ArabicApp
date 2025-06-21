@@ -6,6 +6,15 @@ st.set_page_config(page_title="Arabic Vocabulary Quiz")
 # Updated Vocabulary list
 vocab = [
     {"arabic": "كِتَابٌ", "english": "Book"},
+    {"arabic": "بَرَّيَاةٌ", "english": "Pencil sharpener"},
+    {"arabic": "مِقَصٌّ", "english": "Scissors"},
+    {"arabic": "مِفْتَاحٌ", "english": "Key"},
+    {"arabic": "أَرِيكَةٌ", "english": "Sofa"},
+    {"arabic": "ثَلَّاجَةٌ", "english": "Fridge"},
+    {"arabic": "سَرِيرٌ", "english": "Bed"},
+    {"arabic": "وِسَادَةٌ", "english": "Pillow"},
+    {"arabic": "سَاعَةٌ", "english": "Clock/Watch"},
+    {"arabic": "مِكْوَاةٌ", "english": "Iron"}
     {"arabic": "مِقَصٌّ", "english": "Scissors"},
     {"arabic": "قَلَمٌ", "english": "Pen"},
     {"arabic": "مِسْطَرَةٌ", "english": "Ruler"},
