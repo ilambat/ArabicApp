@@ -25,6 +25,7 @@ vocab = [
     {"arabic": "غَسَّالَةٌ", "english": "Washing machine"},
     {"arabic": "قِفْلٌ", "english": "Lock"},
     {"arabic": "مِذْيَاعٌ", "english": "Radio"},
+    {"arabic": "بَرَّيَاةٌ", "english": "Pencil sharpener"},
     {"arabic": "شَمْعَةٌ", "english": "Candle"}
 ]
 
